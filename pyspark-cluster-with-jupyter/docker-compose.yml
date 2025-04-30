@@ -57,3 +57,8 @@ services:
         - /tmp/spark-events-local:/tmp/spark-events
 volumes:
   spark_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: C:/spark-share
+      o: bind
